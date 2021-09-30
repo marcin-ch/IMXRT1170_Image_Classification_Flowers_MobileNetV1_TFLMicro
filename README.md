@@ -114,3 +114,23 @@ Model performance is bit poor, [eIQ TensorFlow Lite for Microcontrollers Lab for
 
 What is also important, following [eIQ TensorFlow Lite for Microcontrollers Lab for RT1170 - With Camera.pdf](https://community.nxp.com/t5/eIQ-Machine-Learning-Software/Getting-Started-with-TensorFlow-Lite-for-Microcontrollers-on-i/ta-p/1124103?attachment-id=118735):
 > You also may notice that even when the camera is pointed at random objects, it still attempt to categorize them as a flower type. This is because when the model was retrained, it was only retrained on flower images. The concept of any other type of object is unknown to the model, so it attempts to classify everything as one of the 5 types that it does know.
+
+## How to use this repo (source code)
+1. Clone the repo or download as `*.zip` to your local disc drive
+    * when clonning please use below command:
+    ```console
+    git clone https://github.com/marcin-ch/IMXRT1170_Image_Classification_Flowers_MobileNetV1_TFLMicro.git
+    ```
+2. Open MCUXpresso, you will be asked for choosing existing or creating new workspace, I recommend creating new workspace for testing purposes
+3. From `QuickStart Panel` choose `Import project(s) from file system` and then select either unpacked repo (in case you clonned the repo) or zipped repo (in case you downloaded the archive)
+4. Make sure `Copy projects into workspace` in `Options` is checked
+5. Hit `Finish`
+6. Select imported project in `Project Explorer` and hit `Debug` in `QuickStart Panel`, the application should be up and running
+7. You can now remove clonned or downloaded repo, as it now exists in your workspace
+
+## How to use this repo (binary file)
+If you just want to check how the project looks like running on the board, you can flash binary files available in */doc* folder:
+* *evkmimxrt1170_SDK2101_Image_Class_Flowers_TFLM_Debug.bin*
+* *evkmimxrt1170_SDK2101_Image_Class_Flowers_TFLM_Release.bin*
+ 
+ As i.MXRT1170 evaluation kit enumerates as MSD (Mass Storage Device) when connected to PC through USB cable, you can simply drag-n-drop binary file to your board. Wait few moments when flashing is in progress, reset the board and you should see application working.

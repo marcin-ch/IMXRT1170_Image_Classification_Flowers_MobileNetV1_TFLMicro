@@ -10,7 +10,8 @@
 #include "output_postproc.h"
 #include "get_top_n.h"
 #include "demo_config.h"
-#include "labels.h"
+#include "flowers_labels.h"
+// #include "labels.h"
 #ifdef EIQ_GUI_PRINTF
 #include "chgui.h"
 #endif

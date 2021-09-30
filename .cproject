@@ -241,7 +241,7 @@
 								<option id="com.crt.advproject.gas.hdrlib.1900385337" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlibnano" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.specs.20882550" name="Specs" superClass="com.crt.advproject.gas.specs" value="com.crt.advproject.gas.specs.newlibnano" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.arch.1817109415" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm7" valueType="enumerated"/>
-								<option id="gnu.both.asm.option.flags.crt.804736725" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt"/>
+								<option id="gnu.both.asm.option.flags.crt.804736725" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__" valueType="string"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.both.asm.option.include.paths.146364640" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source}&quot;"/>
@@ -529,7 +529,7 @@
 								<option id="com.crt.advproject.cpp.stackusage.269347941" name="Generate Stack Usage Info (-fstack-usage)" superClass="com.crt.advproject.cpp.stackusage" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.cpp.config.2048501014" name="Obsolete (Config)" superClass="com.crt.advproject.cpp.config" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.cpp.store.1677568891" name="Obsolete (Store)" superClass="com.crt.advproject.cpp.store" useByScannerDiscovery="false"/>
-								<option id="com.crt.advproject.cpp.exe.release.option.debugging.level.1211543365" superClass="com.crt.advproject.cpp.exe.release.option.debugging.level"/>
+								<option id="com.crt.advproject.cpp.exe.release.option.debugging.level.1211543365" superClass="com.crt.advproject.cpp.exe.release.option.debugging.level" useByScannerDiscovery="false"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.1582147897" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.release.464844750" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.release">
@@ -638,7 +638,7 @@
 								<option id="com.crt.advproject.gcc.stackusage.620536403" name="Generate Stack Usage Info (-fstack-usage)" superClass="com.crt.advproject.gcc.stackusage" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.gcc.config.709586589" name="Obsolete (Config)" superClass="com.crt.advproject.gcc.config" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.gcc.store.927056835" name="Obsolete (Store)" superClass="com.crt.advproject.gcc.store" useByScannerDiscovery="false"/>
-								<option id="com.crt.advproject.gcc.exe.release.option.debugging.level.2013310774" superClass="com.crt.advproject.gcc.exe.release.option.debugging.level"/>
+								<option id="com.crt.advproject.gcc.exe.release.option.debugging.level.2013310774" superClass="com.crt.advproject.gcc.exe.release.option.debugging.level" useByScannerDiscovery="false"/>
 								<inputType id="com.crt.advproject.compiler.input.756567261" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.exe.release.2006609330" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.release">
@@ -646,7 +646,7 @@
 								<option id="com.crt.advproject.gas.hdrlib.2025868545" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlibnano" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.specs.472317383" name="Specs" superClass="com.crt.advproject.gas.specs" value="com.crt.advproject.gas.specs.newlibnano" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.arch.147688916" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm7" valueType="enumerated"/>
-								<option id="gnu.both.asm.option.flags.crt.1615617629" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt"/>
+								<option id="gnu.both.asm.option.flags.crt.1615617629" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__" valueType="string"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.both.asm.option.include.paths.1285754733" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source}&quot;"/>

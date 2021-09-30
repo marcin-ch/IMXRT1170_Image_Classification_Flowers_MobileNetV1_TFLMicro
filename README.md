@@ -1,5 +1,5 @@
 # Overview
-This is a example of image classification on i.MXRT1170 evaluation kit ([MIMXRT1170-EVK](https://www.nxp.com/design/development-boards/i-mx-evaluation-and-development-boards/i-mx-rt1170-evaluation-kit:MIMXRT1170-EVK)).
+This is an example of image classification on i.MXRT1170 evaluation kit ([MIMXRT1170-EVK](https://www.nxp.com/design/development-boards/i-mx-evaluation-and-development-boards/i-mx-rt1170-evaluation-kit:MIMXRT1170-EVK)).
 
 It is heavily based on NXP tutorial [Getting Started with TensorFlow Lite for Microcontrollers on i.MX RT](https://community.nxp.com/t5/eIQ-Machine-Learning-Software/Getting-Started-with-TensorFlow-Lite-for-Microcontrollers-on-i/ta-p/1124103). Following the description of the tutorial:
 > it covers how to take an existing TensorFlow image classification model named Mobilenet, and re-train it to categorize images of flowers. This is known as transfer learning. This updated model will then be saved as a TensorFlow Lite file. By using that file with the TensorFlow Lite for Microcontrollers inference engine that is part of NXPs [eIQ](https://www.nxp.com/design/software/development-software/eiq-ml-development-environment:EIQ) package, the model can be ran on an i.MXRT embedded device. A camera attached to the board can then be used to look at photos of flowers and the model will determine what type of flowers the camera is looking at. These same steps could then be used for classifying other types of images too.
@@ -23,9 +23,11 @@ NXP suggests installing Python, TensorFlow, TensorFlow Lite Model Maker, Vim and
 
 All the steps required to retrain existing model are covered in this notebook:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/marcin-ch/IMXRT1170_Image_Classification_Flowers_MobileNetV1_TFLMicro/blob/main/doc/IMXRT1170_Image_Classification_Flowers_MobileNetV1_TFLiteMicro.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/marcin-ch/IMXRT1170_Image_Classification_Flowers_MobileNetV1_TFLMicro/blob/master/doc/IMXRT1170_Image_Classification_Flowers_MobileNetV1_TFLiteMicro.ipynb)
 
-Hit the button and then `Ctrl`+`F9` (**Run All**)
+Hit the button and then `Ctrl`+`F9` (**Run All**).
+
+This notebook is also available in */doc* folder.
 
 Once notebook is executed, you get 3 files:
 * retrained model *flower_model.tflite*
@@ -39,7 +41,9 @@ Save them to your favourite directory at your local disc drive.
 2. From **QuickStart Panel** import SDK example *tensorflow_lite_micro_label_image*
     * in **Project options** change **SDK Debug Console** to **UART** to use external debug console via UART (should be checked by default)
 3. In **Project Explorer** change project's name to, for example, *evkmimxrt1170_SDK2101_Image_Class_Flowers_TFLM*
-4. Move *flower_model.tflite* and *flowers_labels.txt* to */doc* folder
+4. Move following files to */doc* folder
+    * *flower_model.tflite*
+    * *flowers_labels.txt*
 5. Move *flower_model.h* to */source/model* folder
 6. In MCUXpresso, open */source/model/flower_model.h* and change it from:
     ```c
